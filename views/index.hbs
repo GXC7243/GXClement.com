@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Gavin X. Clement - Graphics &amp; Photos</title>
+	<meta name='description' content='Graphic Designer &amp; Photo retouches, Seattle, WA'>
+	<meta name='author' content='Gavin X. Clement'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<link rel='stylesheet' href='styles/main.css'>
+	<link rel="stylesheet" href='styles/photoswipe.css'> 
+	<link rel="stylesheet" href="styles/default-skin/default-skin.css"> 
+</head>
+<body>
+	<section id='info'>
+		<div id='menu-btn'></div>
+		<img id='logo-text' src='images/logo-text.png'>
+		<img id='profile-img' src='images/avatar.jpg'>
+
+		<span class='name'>Gavin X. Clement</span>
+		<span class='subtitle'>WEB &amp; iOS DEV</span>
+		<nav>
+			<ul>
+				<li class='title'>CONTACT
+				<a href='tel:206-659-8776'><li id='phone' class='phone-icn'>206-659-8776</a>
+				<a href='mailto:gxc7243@gmail.com'><li id='email' class='email-icn'>gxc7243@gmail.com</li></a>
+				<a target='_blank' href='//twitter.com/itdoell'><li id='twitter' class='twitter-icn'>@gxc7243</a>
+				<!-- <a target='_blank' href='//github.com/itdoell'><li id='github' class='github-icn'>itdoell</li></a> -->
+
+{{!-- 				<li class='title'>PROJECTS
+				<a href='//eyepat.ch'><li id='eyepatch' class='eyepatch-icn'>eyepat.ch</a> --}}
+			</ul>
+		</nav>
+	</section>
+	
+	<div id='main'>
+		<section>
+			<h1>Hello. My name is Gavin.</h1>
+			<p class='bio'>I'm a freelance graphic designer and digital photo editor from Seattle, WA. I'm <span id='age'></span> years old and love to express myself through imagery. Whether it's editing or ideas from scratch, putting creativity and passion into my work is what I strive for. I have years of experience with various photo editing and graphic design software. I've been a freelance graphic designer for 4 years. Dealing with clients from around the world. I work hard for my clients, staying on schedule, offering product guarantees, competitive prices and one on one communication.</p>
+		</section>
+		<div id='hire-btn-wrap'>
+			<div class='wrapper'>
+			<div class='bigitem'></div>
+				<div class='smallitem'>
+				<div id='hire-btn'>Lets Work Together</div>
+				</div>
+			</div>
+		</div>
+		<section class='wrapper'>
+			<div class='flexdiv'>
+				<img src='images/brands.png' class='icon'>
+				<span class='title'>Branding</span>
+				<span class='info'>Branding is one of the most important phases in any business, large or small. An effective branding plan gives you a key advantage in competitive markets. Plan out flyers, emails, presentations, ads, logos, websites and company message.</span>
+			</div>
+			<div class='flexdiv'>
+				<img src='images/photos.png' class='icon'>
+				<span class='title'>Photo Editing</span>
+				<span class='info'>There’s no limit to what you can do with a good quality digital image in terms of photo manipulation; bring out colors to enhance a message, make a funny card, repair skin for an ad or article, take out unwanted objects and isolate colors.  Whether it’s personal or business you’ll always find a use for digital photo editing.</span>
+			</div>
+			<div class='flexdiv'>
+				<img src='images/layouts.png' class='icon'>
+				<span class='title'>Web Layouts</span>
+				<span class='info'>A high quality website means setting the mood for your clients or customers before you even speak with them.  Use colors to enhance a company message, have a clean design to allow easy navigation, interactive and tested content. With an enhanced website and a good product there’s no end to company growth.</span>
+			</div>
+		</section>
+
+		<secton id='skills' class='flexwrap'>
+			<ul id='primary' class='flexdiv'>
+				<h3>Primary Skills</h3>
+				<li>Adobe Creative Suite
+				<li>Edge
+				<li>Photoshop
+				<li>Illustrator
+				<li>InDesign
+				<li>Web Design
+				<li>Print Design
+				<li>Wireframing
+				<li>Photography
+				<li>Photo Editing
+				<li>User Interface
+			</ul>
+			<ul id='other' class='flexdiv'>
+				<h3>Other Skills</h3>
+				<li>Typography
+				<li>GIMP
+				<li>HTML
+				<li>CSS3
+				<li>Axure
+				<li>MySQL
+				<li>OmniGraffle
+				<li>Camtasia
+				<li>Microsoft Office Suite
+				<li>Open Office
+				<li>Flat Design
+				<li>Metro Design
+			</ul>
+		</secton>
+		<section id='projects'>
+			<h2>Portfolio</h2>
+			<div class='wrapper'>
+				<section id="photos">
+				{{#each imgArr}}
+					<div class="picture three cf" itemscope itemtype="http://schema.org/ImageGallery">
+			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			  <a href="images/portfolio/full/{{this}}" itemprop="contentUrl" data-size="1000x667">
+                <img src="images/portfolio/thumbs/{{this}}" itemprop="thumbnail">
+			  </a>
+			</figure>
+		</div>
+				{{/each}}
+				</section>
+			</div>
+		</section>
+		<section id='letsworktogether'>
+			<h2>Let's Work Together</h2>
+			<div class='wrapper'>
+				<div class='smallitem info'>
+					<p class='project-p'>
+					Think we're a good match? Drop me a line and let's get started on a project together.<br><br>
+					On a budget? That's okay. Price is determined on a per-project basis. Just let me know a bit about your project and we will figure out how to work within your price range.
+					</p>
+				</div>
+				<div class='bigitem'>
+					<input id='form-name' type='text' placeholder='Name'>
+					<input id='form-email' type='text' placeholder='Email'>
+					<textarea id='form-message' placeholder='Tell me a bit about your project...'></textarea>
+					<div id='submit'>Submit</div>
+					<div id='form-notify'>Success! I will contact you soon.</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+	<script src="scripts/photoswipe.min.js"></script> 
+	<script src="scripts/photoswipe-ui-default.min.js"></script> 
+	<script src='scripts/script.js'></script>
+</script>
+</body>
+</html>
